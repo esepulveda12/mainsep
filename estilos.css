@@ -1,0 +1,636 @@
+
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" );
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Martel Sans', "Maven pro";
+  text-decoration: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #000000; 
+    
+}
+
+/* header navmenu */
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding: 5px  150px;
+    border-bottom:2px solid #ff0048;
+}
+
+
+/*logo nav */
+
+.header .logo img {
+    height: 174px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* nav menu */
+
+.header .nav{
+    list-style: none;
+    font-size: 20px;
+}
+
+
+.header .nav li{
+     display: inline-block;
+     padding: 0 20px;
+     line-height: 60px;
+     margin: 0 5px;
+     text-decoration: none;
+}
+
+
+.header .nav li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav a{
+    font-size: 16px;
+    color: #FFFF;
+    text-decoration:none; 
+}
+
+.header .nav li a:hover{
+    color: #ff0048;
+}
+
+
+
+
+/*boton header*/
+
+
+.header .btn-contacto button{
+    font-weight: 700;
+    color: #f4f4f4;
+    padding: 7px 25px;
+    background-color: #ff004800;
+    border-radius: 50px;
+    border-color: #ff0048;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+ 
+}
+
+.header .btn-contacto button:hover{
+    background-color: #ff0048;
+    color: #ffff;
+    transform: scale(1.1);
+}
+
+
+.checkbtn{
+    font-size: 30px; 
+    color: #ff0048;
+    cursor: pointer;
+    display: none; 
+}
+
+#check{
+    display: none;
+}
+
+
+@media (max-width: 1200px){
+    .header{
+        padding-left: 20px;
+
+    }
+    .header  ul li a{
+        font-size: 16px;
+
+    }
+
+    .header .btn-contacto button{ 
+        font-weight: 200;
+        color: #f4f4f4;
+        padding: 7px 20px;
+        font-size: 16px;
+        margin: auto;
+
+
+    }
+    .header .logo img {
+        height: 134px;
+        width: auto;
+    }
+    
+
+
+}
+/* responsive desing de nav bar*/
+
+@media (max-width:1000px){
+    .header{
+        padding-left: 20px;
+
+    }
+    .header .nav a{
+        font-size: 10px;
+
+    }
+
+    .header .btn-contacto button{ 
+        font-weight: 200;
+        color: #f4f4f4;
+        padding: 7px 20px;
+        font-size: 10px;
+        margin: auto;
+
+    }
+    .header .logo img {
+        height: 134px;
+        width: auto;
+    }
+}
+    
+
+
+/* Estilos responsivos para pantallas pequeñas */
+
+@media (max-width: 858px) {
+
+    nav {
+        flex-grow: 1;
+        text-align: right;
+    }
+
+    ul.nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: right;
+    }
+
+    ul.nav li {
+        margin: 0 10px;
+    }
+
+    ul.nav li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    ul.nav li a:hover, ul.nav li a.active {
+        color: #ff0048;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul.nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        top: 110px;
+        left: -100%;
+        text-align: right;
+        transition: left .55s;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul.nav li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    #check:checked ~ ul.nav {
+        left: 0;
+    }
+
+    .btn-contacto{
+        display: none;
+    }
+
+    
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 1.5em;
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+
+    .text-overlay .btn {
+        font-size: 0.9em;
+    }
+
+}
+
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff0048; 
+    color: white;
+    font-size: 30px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    z-index: 1000; 
+  }
+  
+  .chat-button:hover {
+    background-color: #ff0048; 
+    transform: scale(1.1); 
+  }
+  
+  .chat-button i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+
+.social-bar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #ff0048; 
+    padding: 15px 15px;
+    border-radius: 50px;
+    border-color: #ff0048;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+  .social-bar a {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+  }
+  
+  .social-bar a:hover {
+    transform: scale(1.5);
+  }
+  
+  .social-icon i {
+    display: block;
+  }
+  
+  .whatsapp { background-color: transparent; }
+  .facebook { background-color: transparent; }
+  .tiktok { background-color: transparent; }
+  .linkedin { background-color: transparent; }
+  
+
+
+
+
+
+.Texto-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: absolute;
+    margin-top: 7%;
+ 
+
+    
+    
+    
+}
+
+.Texto-principal h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 900;
+    font-size: 3.5vw; 
+    line-height: 1.5; 
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4rem; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+   
+}
+
+.Texto-principal p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 5; 
+    font-size: 2.5vw; 
+    line-height: 1.8; 
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 5rem; 
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); 
+    z-index: 1000;
+   
+}
+
+
+/* Botón personalizado */
+ .mi-boton{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 7px 25px;
+    background-color: #ff004800;
+    border-radius: 50px;
+    border-color: #ff0048;
+    gap: 5px; 
+    z-index: 1000;
+    
+  }
+  
+  /* Tamaño del ícono */
+  .mi-boton {
+    justify-content: flex-start;
+    font-size: 2rem;
+    z-index: 1000;
+    align-content: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 1.9%;
+    color: #f4f4f4;
+    padding: 5px 15px;
+    background-color: #ff004800;
+    border-radius: 20px;
+    border-color: #ff0048;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;  
+  }
+  
+  .mi-boton:hover{
+    background-color: #ff0048;
+    color: #ffff;
+    transform: scale(1.1);
+}
+
+
+
+  .icono-boton{
+      display: flex;
+      z-index: 1000;
+      width: 6%;
+      height: auto;
+      max-width: 100%;
+     
+  }
+
+
+.containercarrusel {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.mi-carrusel {
+    width: 80%; 
+    max-width: 600px; 
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-0%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 30px;
+    padding: 10px; 
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem; 
+    margin-bottom: 5px; 
+}
+
+.carousel-caption p {
+    font-size: 1rem; 
+    margin-top: 8%;
+}
+
+
+.botoncarrusel{
+    margin-top: 8%;
+    padding: 5px 12px;
+    border-radius: 30px;
+    border: 2px solid #33029d; 
+    color: white; 
+    background-color: transparent; 
+    border-top:2px solid #ff0048;
+    
+    
+}
+
+.botoncarrusel:hover {
+    background-color: #ff0048; 
+    color: white; 
+    border: 2px solid white;
+}
+
+.titulocarrusel h1{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(51,2,157,100) 50%, rgba(0,0,0,1) 77%);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 100;
+    font-size: 2.5vw; 
+    line-height: 1.5; 
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    z-index: 1000;
+    padding-left: 30%;  
+    padding-right: 31%;
+    margin-bottom: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-top:2px solid #ff0048;
+}
+
+/* galeria de fotos */
+
+
+.galeria {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #000000;
+    color:white;
+    font-size:20px;
+    font-family: 'Maven Pro', sans-serif;
+    border-top:2px solid #ff0048;
+
+    
+}
+
+.galeria h2 {
+    margin-bottom: 20px; 
+}
+
+.galeria-contenedor {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 10px; 
+}
+
+.galeria-contenedor img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+}
+
+.galeria-contenedor img:hover {
+    transform: scale(1.3); 
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: black; 
+    color: #f4f4f4; 
+    padding: 20px; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    border-top: 2px solid #ff0048;
+}
+
+.logofooter {
+    flex: 1; 
+    text-align: center; 
+}
+
+.logofooter img {
+    max-width: 180px; 
+    height: auto; 
+}
+
+.contacto, .enlaces, .legal {
+    flex: 1; 
+    margin: 10px; 
+}
+
+.contacto h4, .enlaces h4 {
+    border-bottom: 2px solid #ff0048; 
+    padding-bottom: 5px; 
+}
+
+.enlaces ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.enlaces li {
+    margin: 5px 0; 
+}
+
+.enlaces a {
+    color: #f4f4f4; 
+    text-decoration: none;
+}
+
+.enlaces a:hover {
+    color: #ff0048;
+    
+    
+}
+
+.legal {
+    text-align: center; 
+    flex-basis: 100%;
+    margin-top: 20px;  
+    font-size: 0.9rem; 
+
+}
+
+
+/*slider apps */
+
+
+.slider {
+    overflow: hidden; 
+    position: relative;
+    width: 100%; 
+    height: 50px; 
+    background-color: #000000;
+    border-top: 2px solid #ff0048;
+}
+
+.slider-contenedor {
+    display: flex; /* Coloca los slides en fila */
+    animation: scroll 10s linear infinite; 
+}
+
+.slideapp {
+    flex: 0 0 auto; /* No permite que los slides se reduzcan */
+    width: 50px; /* Ancho de cada logo, ajusta según necesites */
+    height: 100%; /* Ajusta la altura */
+    display: flex; /* Centra el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-right: 30px;
+}
+
+.slideapp img {
+    justify-content: space-evenly;
+    max-width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
