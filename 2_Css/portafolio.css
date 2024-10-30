@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', 'Maven Pro', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(105,3,48,1) 50%, rgba(0,0,0,1) 77%);
+    color: #fff; 
+
+}
+
+.emybtn{
+    color: white;
+    background-color: #ff0048;
+    border-color: #ff0048;
+    border-radius: 10px;
+}
+
+.emybtn:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-color: #ff0048;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.541);
+}
+.card-text{
+    color: #fff;
+}
+.card-title{
+     color: #fff;
+ }
+
+.nav a {
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+.nav a:hover {
+    color: #ff0048; 
+}
+
+.nav a.active {
+    color: #ff0048;
+    font-weight: bold; 
+}
+
+.nav {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav li {
+    margin: 0 15px; 
+}
+
+.nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color: #ff0048; 
+}
+
+.galeria {
+    background-color: #00000077;
+}
+
+.galeria h2 {
+    color: #ffffff;
+}
+
+.card {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+footer {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 15px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

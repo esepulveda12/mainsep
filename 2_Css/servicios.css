@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', 'Maven Pro', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(105,3,48,1) 50%, rgba(0,0,0,1) 77%);
+    color: #fff; 
+}
+.nav a {
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+.nav a:hover {
+    color: #ff0048; 
+}
+
+.nav a.active {
+    color: #ff0048;
+    font-weight: bold; 
+}
+
+/* Estilos para las tarjetas de servicio */
+.card {
+    background-color: rgba(0, 0, 0, 0.589); 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.card img {
+    border-radius: 10px 10px 0 0; 
+}
+
+.card-body {
+    padding: 20px; 
+}
+
+.card-title {
+    font-size: 1.5rem; 
+    color: #ff0048; 
+    margin-bottom: 10px; 
+}
+
+.card-text {
+    color: #f4f4f4; 
+    margin-bottom: 20px; 
+}
+
+.btn-primary {
+    background-color: #ff0048; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn-primary:hover {
+    background-color: #e6003c; 
+    transform: scale(1.05); 
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; 
+    }
+}
+

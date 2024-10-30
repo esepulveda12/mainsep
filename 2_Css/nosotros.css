@@ -1,0 +1,85 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(105,3,48,1) 50%, rgba(0,0,0,1) 77%);            
+}
+
+/* Contenedor principal */
+main {
+    padding: 50px;
+}
+
+/* Sección principal */
+.contenedor {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de tarjeta */
+    max-width: 800px;
+    margin: 0 auto;
+}
+.nav a {
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+.nav a:hover {
+    color: #ff0048; 
+}
+
+.nav a.active {
+    color: #ff0048;
+    font-weight: bold; 
+}
+
+
+/* Título principal */
+.contenedor h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.col-md-6 h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.col-md-6 p, .col-md-6 ul {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
