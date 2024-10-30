@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - MainSep</title>
+    <link href="2_Css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="2_Css/portafolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Encabezado  menú de navegación -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logomainsep.png" alt="logo de la imagen">
+        </div>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolio.html" class="active" >Casos de exito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html" >Servicios</a></li>
+                <li><a href="planes.html">Planes</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <!-- Botón de contacto -->
+            <a href="Contacto.html" class="btn-contacto"><button>Contacto</button></a>
+            
+            <div class="cart-icon" style="position: relative; display: inline-block;">
+                <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" style="border: none; background: transparent; padding: 0;">
+                  <img src="images/carrito-de-compras.png" alt="Carrito">
+                  <span class="cart-count">0</span>
+                </button>
+              </div>
+                <div href="1_PaginaWeb/login.html" class="usuario-icon" style="position: relative; display: inline-block;">
+                    <a href="login.html">
+                        <img src="images/circulo-de-usuario.png" alt="usuario" style="cursor: pointer;">
+                    </a>
+                </div>
+          </div>
+            
+    </header>
+
+    <main>
+        <section class="galeria py-5">
+          <div class="container">
+            <h2 class="text-center mb-4">Casos de exito</h2>
+            
+            <!-- Carrusel de Proyectos -->
+            <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="row">
+                          <div class="col-md-4">
+                              <div class="card">
+                                  <img src="images/portafolio1.png" class="card-img-top" alt="Descripción de imagen 1">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Timeat</h5>
+                                      <p class="card-text">Gracias a Mainsep, nuestra app es intuitiva, rápida y atractiva. Mejoraron la experiencia de nuestros clientes y simplificaron el proceso de pedidos. ¡Un trabajo impecable!</p>
+                                      <!-- Sección de reseñas -->
+                                      <div class="rating">
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star-half-alt checked"></span> <!-- Media estrella -->
+                                      </div>
+                                      <a href="#" class="btn btn-primary emybtn">Ver Más</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Repetir para cada proyecto -->
+                          <div class="col-md-4">
+                              <div class="card">
+                                  <img src="galeria/2585277.jpg" class="card-img-top" alt="Descripción de imagen 2">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Best Fitness</h5>
+                                      <p class="card-text">Mainsep hizo un gran trabajo con nuestra app Best Fitness. La interfaz es intuitiva y motivadora, ayudando a los usuarios a alcanzar sus metas de manera efectiva. ¡Muy satisfechos con el resultado!</p>
+                                      <!-- Sección de reseñas -->
+                                      <div class="rating">
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span> <!-- 5 estrellas -->
+                                      </div>
+                                      <a href="#" class="btn btn-primary emybtn">Ver Más</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                              <div class="card">
+                                  <img src="galeria/3487425.jpg" class="card-img-top" alt="Descripción de imagen 3">
+                                  <div class="card-body">
+                                      <h5 class="card-title"><P>Dopets</P></h5>
+                                      <p class="card-text">Mainsep creó una web fantástica para nuestra tienda de mascotas. Es fácil de navegar, atractiva y ha mejorado la experiencia de nuestros clientes. ¡Un trabajo excelente!</p>
+                                      <!-- Sección de reseñas -->
+                                      <div class="rating">
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star-half-alt checked"></span> <!-- Media estrella -->
+                                      </div>
+                                      <a href="#" class="btn btn-primary emybtn">Ver Más</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <div class="carousel-item">
+                      <div class="row">
+                          <!-- Repite la estructura para otros proyectos -->
+                          <div class="col-md-4">
+                              <div class="card">
+                                  <img src="galeria/4936537_2592160.jpg" class="card-img-top" alt="Descripción de imagen 4">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Best Running</h5>
+                                      <p class="card-text">La app Best Running que desarrolló Mainsep superó nuestras expectativas. Es fácil de usar, motivadora y ha ayudado a nuestros usuarios a mejorar sus rutinas de carrera. </p>
+                                      <!-- Sección de reseñas -->
+                                      <div class="rating">
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star-half-alt checked"></span>
+                                          <span class="fa fa-star"></span> <!-- 3.5 estrellas -->
+                                      </div>
+                                      <a href="#" class="btn btn-primary emybtn">Ver Más</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <style>
+          .checked {
+              color: #FFD700; /* Color dorado para las estrellas */
+          }
+          .rating {
+              margin-bottom: 10px; /* Espacio entre la reseña y el botón */
+          }
+          </style>
+          
+                <!-- Agrega más carrusel items si es necesario -->
+              </div>
+              <a class="carousel-control-prev" href="#portfolioCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#portfolioCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+    
+          </div>
+        </section>
+      </main>
+   
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="logofooter">
+        <img src="images/logomainsep.png" alt="Logo Mainsep"> 
+    </div>
+    <div class="contacto">
+        <h4>Contacto</h4>
+        <p>Teléfono: +57 304277012</p>
+        <p>Correo: info@mainsep.com</p>
+    </div>
+
+    <div class="enlaces">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+            <li><a href="nosotros.html">Sobre nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+    </div>
+
+    <div class="legal">
+        <p>© 2024 Mainsep. Todos los derechos reservados.</p>
+        <p>Mainsep utiliza tecnología blockchain para garantizar seguridad y eficiencia en las transacciones.</p>
+    </div>
+</footer>
+<!-- Offcanvas para el carrito -->
+<div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header mx-4">
+      <h5 id="cartOffcanvasLabel">Carrito</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul id="cart-items" class="list-group">
+        <!-- Los artículos del carrito se agregarán aquí -->
+      </ul>
+      <div class="mt-3">
+        <strong>Total: $<span id="cart-total">0</span></strong>
+      </div>
+    </div>
+    <div class="offcanvas-footer custom-offcanvas-footer d-flex justify-content-between">
+      <button type="button" class="btn btn-danger" id="emptyCartButton">Vaciar Carrito</button>
+      <button type="button" class="btn btn-success" id="checkoutButton">Pagar ahora</button>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="carrito.js"></script>
+  </body>
+
+</html>
+
+
